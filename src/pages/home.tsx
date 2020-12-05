@@ -17,10 +17,12 @@ export const Home = () => {
       .catch((error) => {
         console.log("unable to fetch data", error);
       });
-  });
+
+    return setTopics([]);
+  }, []);
 
   const action = (topic: string) => {
-    history.push(`/courses/${topic.toLowerCase()}`);
+    history.push(`/courses/${topic}`);
   };
 
   return (

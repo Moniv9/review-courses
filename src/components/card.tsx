@@ -10,7 +10,7 @@ import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: 340
+    maxWidth: 320
   }
 });
 
@@ -21,6 +21,7 @@ interface ICard {
   description?: string;
   tags?: string[];
   action: Function;
+  actionButtonLabel?: string;
 }
 
 export const CardComponent: React.FC<{ data: ICard }> = (props) => {
@@ -53,9 +54,9 @@ export const CardComponent: React.FC<{ data: ICard }> = (props) => {
         <Button
           size="small"
           color="primary"
-          onClick={() => data.action(data.title)}
+          onClick={() => data.action(data?.title)}
         >
-          View Courses
+          {data.actionButtonLabel ? data.actionButtonLabel : "View Courses"}
         </Button>
       </CardActions>
     </Card>
