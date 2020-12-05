@@ -1,6 +1,6 @@
 import React from "react";
-import { CardComponent } from "../components/card";
 
+import { CardComponent } from "../components/card";
 import { EndPoint } from "../endpoint";
 
 import "../style.scss";
@@ -22,8 +22,8 @@ export const Home = () => {
   return (
     <div className="container">
       <div className="main-topics-container">
-        {topics.map((topic) => (
-          <div className="topic-card">
+        {topics.map((topic, index) => (
+          <div key={`topic-card-${index}`} className="topic-card">
             <CardComponent data={{ ...topic, action }} />
           </div>
         ))}

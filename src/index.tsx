@@ -10,10 +10,14 @@ import "./style.scss";
 const App = () => {
   return (
     <React.Fragment>
+      <Header />
       <BrowserRouter>
         <Switch>
           <Route path="/">
             <Home />
+          </Route>
+          <Route path="/courses">
+            <CourseList />
           </Route>
         </Switch>
       </BrowserRouter>
