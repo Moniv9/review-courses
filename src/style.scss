@@ -1,0 +1,18 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  margin: 4% 12% 10% 12%;
+}
+
+.main-topics-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .topic-card {
+    margin: 4%;
+  }
+}
