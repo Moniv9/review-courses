@@ -45,12 +45,16 @@ export const CardComponent: React.FC<{ data: ICard }> = (props) => {
             {data.title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            {data.tags.join(", ")}
+            {Array.isArray(data.tags) && data.tags.join(", ")}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary" onClick={data.action}>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => data.action(data.title)}
+        >
           View Courses
         </Button>
       </CardActions>

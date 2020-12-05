@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 import { CardComponent } from "../components/card";
 import { EndPoint } from "../endpoint";
@@ -7,6 +8,7 @@ import "../style.scss";
 
 export const Home = () => {
   const [topics, setTopics] = React.useState([]);
+  const history = useHistory();
 
   React.useEffect(() => {
     fetch(EndPoint.mainTopics)
@@ -17,12 +19,14 @@ export const Home = () => {
       });
   });
 
-  const action = () => {};
+  const action = (topic: string) => {
+    history.push(`/courses/${topic.toLowerCase()}`);
+  };
 
   return (
     <div className="container">
       <div className="main-topics-container">
-        {topics.map((topic, index) => (
+        {topics.map((topic: any, index) => (
           <div key={`topic-card-${index}`} className="topic-card">
             <CardComponent data={{ ...topic, action }} />
           </div>

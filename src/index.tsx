@@ -16,7 +16,7 @@ const App = () => {
           <Route path="/">
             <Home />
           </Route>
-          <Route path="/courses">
+          <Route path="/courses/:topic">
             <CourseList />
           </Route>
         </Switch>
