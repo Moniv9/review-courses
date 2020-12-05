@@ -19,8 +19,8 @@ interface ICourseDetail {
 
 export const CourseDetail = () => {
   const [courseDetail, setCourseDetail] = React.useState<ICourseDetail>();
-  const params = useParams();
-
+  const params: any = useParams();
+  console.log(params)
   React.useEffect(() => {
     fetch(EndPoint.courseDetail(params["id"]))
       .then((response) => response.json())

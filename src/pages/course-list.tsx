@@ -8,7 +8,7 @@ import "../style.scss";
 
 export const CourseList = () => {
   const [courses, setCourses] = React.useState([]);
-  const params = useParams();
+  const params: any = useParams();
   const history = useHistory();
 
   React.useEffect(() => {
