@@ -22,7 +22,7 @@ export const CourseList = () => {
     return setCourses([]);
   }, [params]);
 
-  const action = (id: string) => {
+  const action = (topic: string, id: string) => {
     history.push(`/course/detail/${id}`);
   };
 

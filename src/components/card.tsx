@@ -54,7 +54,7 @@ export const CardComponent: React.FC<{ data: ICard }> = (props) => {
         <Button
           size="small"
           color="primary"
-          onClick={() => data.action(data?.title)}
+          onClick={() => data.action(data?.title, data?.id)}
         >
           {data.actionButtonLabel ? data.actionButtonLabel : "View Courses"}
         </Button>
