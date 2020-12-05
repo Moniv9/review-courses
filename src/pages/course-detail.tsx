@@ -30,10 +30,17 @@ export const CourseDetail = () => {
       });
   }, [params]);
 
+  console.log(courseDetail?.rating);
+
   return (
     <div className="container">
       <h1>{courseDetail?.title}</h1>
-      <Rating name="rating" defaultValue={courseDetail?.rating} max={10} />
+      <Rating
+        precision={0.5}
+        name="rating"
+        value={courseDetail?.rating}
+        max={10}
+      />
     </div>
   );
 };
