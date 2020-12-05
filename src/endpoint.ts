@@ -1,8 +1,8 @@
 export const EndPoint = {
   mainTopics:
-    "/stub/main-topics.json",
+    "/stub/main-topics.yaml",
   topic: (topic: string) =>
-    `/stub/topics/${topic}.json`,
+    `/stub/topics/${topic}.yaml`,
   courseDetail: (id: string) =>
-    `/stub/course-detail/${id}.json`
+    `/stub/course-detail/${id}.yaml`
 };

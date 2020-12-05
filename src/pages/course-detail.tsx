@@ -5,6 +5,7 @@ import Rating from "@material-ui/lab/Rating";
 import { EndPoint } from "../endpoint";
 
 import "../style.scss";
+const yaml = require("js-yaml");
 
 interface ICourseDetail {
   id: string;
@@ -23,7 +24,7 @@ export const CourseDetail = () => {
   console.log(params)
   React.useEffect(() => {
     fetch(EndPoint.courseDetail(params["id"]))
-      .then((response) => response.json())
+      .then((response) => response.url.endsWith(".yaml") ? response.text().then(text => yaml.safeLoad(text)) : response.json())
       .then((data) => setCourseDetail(data))
       .catch((error) => {
         console.log("unable to fetch data", error);
