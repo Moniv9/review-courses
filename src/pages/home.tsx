@@ -5,7 +5,7 @@ import { CardComponent } from "../components/card";
 import { EndPoint } from "../endpoint";
 
 import "../style.scss";
-const yaml = require("js-yaml");
+import yaml from "js-yaml";
 
 export const Home = () => {
   const [topics, setTopics] = React.useState([]);
@@ -13,7 +13,11 @@ export const Home = () => {
 
   React.useEffect(() => {
     fetch(EndPoint.mainTopics)
-      .then((response) => response.url.endsWith(".yaml") ? response.text().then(text => yaml.safeLoad(text)) : response.json())
+      .then((response) =>
+        response.url.endsWith(".yaml")
+          ? response.text().then((text) => yaml.safeLoad(text))
+          : response.json()
+      )
       .then((data) => setTopics(data))
       .catch((error) => {
         console.log("unable to fetch data", error);
@@ -29,11 +33,12 @@ export const Home = () => {
   return (
     <div className="container">
       <div className="main-topics-container">
-        {topics.map((topic: any, index) => (
-          <div key={`topic-card-${index}`} className="topic-card">
-            <CardComponent data={{ ...topic, action }} />
-          </div>
-        ))}
+        {Array.isArray(topics) &&
+          topics.map((topic: any, index) => (
+            <div key={`topic-card-${index}`} className="topic-card">
+              <CardComponent data={{ ...topic, action }} />
+            </div>
+          ))}
       </div>
     </div>
   );

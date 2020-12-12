@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  margin: 4% 10% 10% 10%;
+  margin: 4% 18% 15% 18%;
   min-height: 75vh;
 }
 
@@ -18,10 +18,17 @@ body {
   }
 }
 
-.slim-card {
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid lightgray;
+.slim-card-img {
+  width: 25%;
+  height: auto;
+}
+
+.go-to-course {
+  margin: 30px 30px 30px 0;
+}
+
+.tags {
+  margin: 20px 10px 30px 0;
 }
 
 .footer {

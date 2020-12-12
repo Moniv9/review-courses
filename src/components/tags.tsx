@@ -1,0 +1,14 @@
+import * as React from "react";
+import Chip from "@material-ui/core/Chip";
+
+export const Tags: React.FC<{ tags: string[] }> = (props) => {
+  const { tags } = props;
+
+  if (!Array.isArray(tags)) {
+    return null;
+  }
+
+  return tags.map((tag) => {
+    return <Chip label={tag} color="secondary" className="tags" />;
+  });
+};
