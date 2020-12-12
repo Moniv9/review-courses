@@ -8,21 +8,13 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 
+import { ICard } from "../interfaces/card";
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 320
   }
 });
-
-interface ICard {
-  id: string;
-  title: string;
-  image?: string;
-  description?: string;
-  tags?: string[];
-  action: Function;
-  actionButtonLabel?: string;
-}
 
 export const CardComponent: React.FC<{ data: ICard }> = (props) => {
   const classes = useStyles();

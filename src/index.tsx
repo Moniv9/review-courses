@@ -6,6 +6,7 @@ import { Home } from "./pages/home";
 import { CourseList } from "./pages/course-list";
 import { CourseDetail } from "./pages/course-detail";
 import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 import "./style.scss";
 
@@ -24,6 +25,7 @@ const App = () => {
           <CourseDetail />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 };

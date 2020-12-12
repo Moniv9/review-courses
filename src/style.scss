@@ -5,6 +5,7 @@ body {
 
 .container {
   margin: 4% 10% 10% 10%;
+  min-height: 75vh;
 }
 
 .main-topics-container {
@@ -15,4 +16,17 @@ body {
   .topic-card {
     margin: 4% 4% 4% 0;
   }
+}
+
+.slim-card {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid lightgray;
+}
+
+.footer {
+  bottom: 0px;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
 }
