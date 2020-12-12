@@ -5,15 +5,16 @@ import { CardComponent } from "../components/card";
 import { EndPoint } from "../endpoint";
 
 import "../style.scss";
+const yaml = require("js-yaml");
 
 export const CourseList = () => {
   const [courses, setCourses] = React.useState([]);
-  const params = useParams();
+  const params: any = useParams();
   const history = useHistory();
 
   React.useEffect(() => {
     fetch(EndPoint.topic(params["topic"].toLowerCase()))
-      .then((response) => response.json())
+      .then((response) => response.url.endsWith(".yaml") ? response.text().then(text => yaml.safeLoad(text)) : response.json())
       .then((data) => setCourses(data))
       .catch((error) => {
         console.log("unable to fetch data", error);

@@ -1,0 +1,41 @@
+- id: '1'
+  title: Data Science
+  image: >-
+    https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg
+  description: ''
+  tags:
+    - Big Data
+    - Data Analytics
+- id: '2'
+  title: Physics
+  image: >-
+    https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=804&amp;q=80
+  description: ''
+  tags:
+    - Thermodynamics
+    - Rotational Physics
+- id: '3'
+  title: Civil Service Exam Preparation
+  image: >-
+    https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=804&amp;q=80
+  description: ''
+  tags:
+    - History
+    - Polity
+- id: '4'
+  title: Programming
+  image: >-
+    https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80
+  description: ''
+  tags:
+    - Javascript
+    - Data Structures
+    - Algorithms
+- id: '5'
+  title: Space
+  image: >-
+    https://images.unsplash.com/photo-1517976547714-720226b864c1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=750&amp;q=80
+  description: ''
+  tags:
+    - Science
+
