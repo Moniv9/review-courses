@@ -9,15 +9,15 @@
 - id: '2'
   title: Physics
   image: >-
-    https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=804&amp;q=80
+    https://images.theconversation.com/files/191827/original/file-20171025-25516-g7rtyl.jpg?ixlib=rb-1.1.0&rect=0%2C70%2C7875%2C5667&q=45&auto=format&w=926&fit=clip
   description: ''
   tags:
     - Thermodynamics
     - Rotational Physics
 - id: '3'
-  title: Civil Service Exam Preparation
+  title: Civil Services Exam Preparation
   image: >-
-    https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=804&amp;q=80
+    https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Delhi_India_Government.jpg/1200px-Delhi_India_Government.jpg
   description: ''
   tags:
     - History
@@ -39,3 +39,12 @@
   tags:
     - Science
 
+- id: '6'
+  title: Programming for Kids
+  image: >-
+     https://www.techsplaining.net/wp-content/uploads/2019/01/kidsCode2.png
+  description: ''
+  tags:
+    - Python
+    - Data Structures
+    - Algorithms

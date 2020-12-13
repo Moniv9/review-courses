@@ -1,0 +1,23 @@
+- id: '1'
+  title: "IIT-JEE Complete Course - VMC Guru"
+  image: "https://vidyamandir.com/assets/images/vmc_logo.png"
+  description: '₹ 48,000'
+  tags:
+    - IIT-JEE
+    - Physics
+
+- id: '2'
+  title: "Physis IIT JEE - ETOOS"
+  image: "https://dmf76jm51vpov.cloudfront.net/www2/images/common/faculty/85.jpg"
+  description: '₹ 12,000'                       
+  tags:
+    - IIT-JEE
+    - Physics  
+
+- id: '3'
+  title: "Physics - IIT JEE - Physics Wallah"
+  image: 'https://physicswallah.live/assets/icon/logo.png'
+  description: "₹ 999"
+  tags:
+    - IIT-JEE
+    - Physics

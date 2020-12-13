@@ -1,0 +1,43 @@
+- id: '1'
+  title: "White Hat Jr"
+  image: "https://gumlet.assettype.com/freepressjournal%2F2020-09%2F4d2ab788-3849-4fdd-9ed7-257eb36f535f%2FWhite_Hat_Jr.jpg?rect=34%2C0%2C836%2C470&w=1200"
+  description: '₹ 50,000'
+  tags:
+    - Python
+    - We charge for free services provided by code.org"
+
+- id: '2'
+  title: "Code.org"
+  image: "https://code.org/images/logo.svg"
+  description: '₹ 0'                       
+  tags:
+    - Python
+    - Data Structure  
+
+- id: '3'			
+  title: "Jr Hacker"
+  image: "https://www.askiitians.com/Resources/images/jh-images/logo.png"
+  description: "₹50,000"
+  tags:
+    - Python
+    - Data Structure
+
+
+
+- id: '4'			
+  title: "toppr codr"
+  image: "https://techstory.in/wp-content/uploads/2020/07/Toppr-Codr.jpeg"
+  description: "₹50,000"
+  tags:
+    - Python
+    - Data Structure
+
+- id: '5'			
+  title: "Vedantu Super-Coders"
+  image: "https://static.vedantu.com/cdn/images/superkids/logo.png"
+  description: "₹50,000"
+  tags:
+    - Python
+    - Data Structure
+
+
