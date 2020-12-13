@@ -6,6 +6,7 @@ import { EndPoint } from "../endpoint";
 
 import "../style.scss";
 import yaml from "js-yaml";
+import { Tags } from "../components/tags";
 
 export const CourseList = () => {
   const [courses, setCourses] = React.useState([]);

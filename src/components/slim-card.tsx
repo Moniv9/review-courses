@@ -12,15 +12,12 @@ import { Tags } from "./tags";
 const useStyles = makeStyles({
   root: {
     width: 800,
-    height: 150,
+    height: 200,
     display: "flex"
   },
   details: {
     display: "flex",
     flexDirection: "column"
-  },
-  content: {
-    flex: "1 0 auto"
   }
 });
 

@@ -48,8 +48,13 @@ export const CourseDetail = () => {
         />
       )}
       <div className="go-to-course">
-        <Button variant="contained" color="primary">
-          Go to Course
+        <Button
+          variant="contained"
+          color="primary"
+          href={courseDetail.url}
+          target="_blank"
+        >
+          {`Go to ${courseDetail.sourceName} Course`}
         </Button>
       </div>
       <div>

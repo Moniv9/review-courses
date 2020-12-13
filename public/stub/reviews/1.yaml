@@ -1,0 +1,19 @@
+--- 
+- 
+  date: "24th July, 2020"
+  id: "1"
+  rating: 4
+  review: "Here is some review on the course"
+  username: "Rahul Sharma"
+- 
+  date: "29th July, 2020"
+  id: "2"
+  rating: 6
+  review: "Here is some review on the course"
+  username: Pradeep
+- 
+  date: "24th Oct, 2020"
+  id: "3"
+  rating: 3
+  review: "Here is some review on the course"
+  username: Priya
