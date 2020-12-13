@@ -26,32 +26,24 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export const Reviews: React.FC<{ id: string }> = (props) => {
   const classes = useStyles();
-  const [reviews, setRewiews] = React.useState<Review[]>([]);
+  const [reviews, setReviews] = React.useState<Review[]>();
   const { id } = props;
-
-  if (!id) {
-    return null;
-  }
-
-  console.log(reviews, id);
-
-  React.useEffect(() => {
+  if(!reviews){
     fetch(EndPoint.reviews(id))
       .then((response) =>
         response.url.endsWith(".yaml")
           ? response.text().then((text) => yaml.safeLoad(text))
           : response.json()
       )
-      .then((data) => setRewiews(data))
+      .then((data) => setReviews(data))
       .catch((error) => {
         console.log("unable to fetch data", error);
       });
-  }, [id]);
-
-  if (!Array.isArray(reviews)) {
-    return null;
+      return <></>
   }
-
+  if (!Array.isArray(reviews)) {
+      return <></>;
+  }
   return (
     <>
       <h2>Reviews</h2>
