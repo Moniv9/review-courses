@@ -1,4 +1,4 @@
-- id: '1'
+- id: basics_of_javascript
   title: Basics of javascript
   image: >-
     https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg
@@ -6,7 +6,7 @@
   tags:
     - javascript
     - es6
-- id: '2'
+- id: understanding_principals
   title: Understanding promises
   image: >-
     https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg
@@ -15,7 +15,7 @@
     - javascript
     - es6
     - promises
-- id: '3'
+- id: event_loops
   title: Event loop in javascript
   image: >-
     https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg

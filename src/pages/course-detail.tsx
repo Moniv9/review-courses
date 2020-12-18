@@ -16,7 +16,7 @@ export const CourseDetail = () => {
   const params: any = useParams();
 
   React.useEffect(() => {
-    fetch(EndPoint.courseDetail(params["id"]))
+    fetch(EndPoint.courseDetail(params["topic_id"], params["id"]))
       .then((response) =>
         response.url.endsWith(".yaml")
           ? response.text().then((text) => yaml.safeLoad(text))
