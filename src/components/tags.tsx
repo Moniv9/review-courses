@@ -9,6 +9,6 @@ export const Tags: React.FC<{ tags: string[] | undefined }> = (props) => {
   }
 
   return <>
-    {tags.map((tag) => <Chip label={tag} variant="outlined" color="secondary" className="tags" />)}
+    {tags.map((tag) => <Chip key={tag} label={tag} variant="outlined" color="secondary" className="tags" />)}
   </>
 };

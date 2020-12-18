@@ -31,7 +31,7 @@ export const CourseList = () => {
       });
       return <></>
   }
-  if(courses == undefined){
+  if(!Array.isArray(courses)){
     Promise.all(
       topic_meta.courses.map(
         (course_id: string) => fetch(EndPoint.courseDetail(topic_id, course_id)))
@@ -48,17 +48,16 @@ export const CourseList = () => {
     return <></>
   }
 
-  const action = (topic: string, id: string) => {
-    history.push(`/courses/${topic}/${id}`);
+  const action = (title: string, id: string) => {
+    history.push(`/course_details/${topic_id}/${id}`);
   };
-  console.log(courses)
   return (
     <div className="container">
       <h2>Best courses available on web for {topic_meta.title}</h2>
       <div className="main-topics-container">
         {Array.isArray(courses) &&
           courses.map((course: any, index) => (
-            <div key={`topic-card-${index}`} className="topic-card">
+            <div key={`topic-card-${course.id}`} className="topic-card">
               <SlimCard
                 data={{ ...course, action, actionButtonLabel: "View Course" }}
               />

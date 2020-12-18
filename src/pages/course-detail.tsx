@@ -14,7 +14,6 @@ import yaml from "js-yaml";
 export const CourseDetail = () => {
   const [courseDetail, setCourseDetail] = React.useState<ICourseDetail>();
   const params: any = useParams();
-
   React.useEffect(() => {
     fetch(EndPoint.courseDetail(params["topic_id"], params["id"]))
       .then((response) =>

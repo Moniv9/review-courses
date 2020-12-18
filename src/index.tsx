@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/courses/:topic_id">
           <CourseList />
         </Route>
-        <Route path="/courses/:topic_id/:id">
+        <Route path="/course_details/:topic_id/:id">
           <CourseDetail />
         </Route>
       </Switch>
