@@ -14,8 +14,10 @@ import yaml from "js-yaml";
 export const CourseDetail = () => {
   const [courseDetail, setCourseDetail] = React.useState<ICourseDetail>();
   const params: any = useParams();
+  const id = params["id"];
+
   React.useEffect(() => {
-    fetch(EndPoint.courseDetail(params["topic_id"], params["id"]))
+    fetch(EndPoint.courseDetail(id))
       .then((response) =>
         response.url.endsWith(".yaml")
           ? response.text().then((text) => yaml.safeLoad(text))
@@ -23,11 +25,11 @@ export const CourseDetail = () => {
       )
       .then((data) => setCourseDetail(data))
       .catch((error) => {
-        console.log("unable to fetch data", error);
+        console.error("unable to fetch data", error);
       });
-  }, [params]);
+  }, [id]);
 
-  if (!courseDetail) {
+  if (!courseDetail || !id) {
     return null;
   }
 

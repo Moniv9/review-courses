@@ -5,10 +5,20 @@ export const Tags: React.FC<{ tags: string[] | undefined }> = (props) => {
   const { tags } = props;
 
   if (!Array.isArray(tags)) {
-    return <></>;
+    return null;
   }
 
-  return <>
-    {tags.map((tag) => <Chip key={tag} label={tag} variant="outlined" color="secondary" className="tags" />)}
-  </>
+  return (
+    <>
+      {tags.map((tag) => (
+        <Chip
+          key={tag}
+          label={tag}
+          variant="outlined"
+          color="secondary"
+          className="tags"
+        />
+      ))}
+    </>
+  );
 };

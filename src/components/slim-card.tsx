@@ -32,7 +32,7 @@ export const SlimCard: React.FC<{ data: ICard }> = (props) => {
 
   return (
     <Card className={classes.root}>
-      <img src={data.image} className="slim-card-img" />
+      <img src={data.image} alt={data.title} className="slim-card-img" />
       <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography gutterBottom variant="h5" component="h2">

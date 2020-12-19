@@ -20,15 +20,16 @@ export const Home = () => {
       )
       .then((data) => setTopics(data))
       .catch((error) => {
-        console.log("unable to fetch data", error);
+        console.error("unable to fetch data", error);
       });
 
     return setTopics([]);
   }, []);
 
-  const action = (title: string, id: string) => {
+  const action = (id: string): void => {
     history.push(`/courses/${id}`);
   };
+
   return (
     <div className="container">
       <div className="main-topics-container">

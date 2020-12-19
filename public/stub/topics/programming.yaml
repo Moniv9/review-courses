@@ -1,0 +1,28 @@
+--- 
+- 
+  description: ""
+  id: "1"
+  image: "https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg"
+  tags: 
+    - javascript
+    - es6
+  title: "Basic javascript"
+- 
+  description: ""
+  id: "2"
+  image: "https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg"
+  tags: 
+    - javascript
+    - es6
+    - promises
+  title: "Understanding promises"
+- 
+  description: ""
+  id: "3"
+  image: "https://learning.naukri.com/articles/wp-content/uploads/sites/11/2019/07/ds.jpeg"
+  tags: 
+    - javascript
+    - es6
+    - promises
+    - async
+  title: "Event loop in javascript"
