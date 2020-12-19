@@ -1,2 +1,6 @@
 # review-courses
-Created with CodeSandbox
+### Install dependencies
+`yarn install`
+
+### run webserver
+`npm start`

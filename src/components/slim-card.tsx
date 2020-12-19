@@ -18,7 +18,8 @@ const useStyles = makeStyles({
   details: {
     display: "flex",
     flexDirection: "column"
-  }
+  },
+  content: {}
 });
 
 export const SlimCard: React.FC<{ data: ICard }> = (props) => {

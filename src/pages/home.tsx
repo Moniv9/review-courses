@@ -26,10 +26,9 @@ export const Home = () => {
     return setTopics([]);
   }, []);
 
-  const action = (topic: string) => {
-    history.push(`/courses/${topic}`);
+  const action = (title: string, id: string) => {
+    history.push(`/courses/${id}`);
   };
-
   return (
     <div className="container">
       <div className="main-topics-container">

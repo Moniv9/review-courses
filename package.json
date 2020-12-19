@@ -11,14 +11,15 @@
   "dependencies": {
     "@material-ui/core": "4.11.2",
     "@material-ui/lab": "4.0.0-alpha.57",
+    "@types/js-yaml": "^3.12.5",
     "@types/node": "14.14.12",
     "@types/react-router-dom": "^5.1.6",
-    "js-yaml": "^3.14.0",
+    "js-yaml": "^3.14.1",
     "node-sass": "4.14.1",
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.3.0"
+    "react-scripts": "^4.0.1"
   },
   "devDependencies": {
     "@types/react": "16.9.19",

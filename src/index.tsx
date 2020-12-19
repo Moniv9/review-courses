@@ -18,10 +18,10 @@ const App = () => {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/courses/:topic">
+        <Route path="/courses/:topic_id">
           <CourseList />
         </Route>
-        <Route path="/course/detail/:id">
+        <Route path="/course_details/:topic_id/:id">
           <CourseDetail />
         </Route>
       </Switch>
